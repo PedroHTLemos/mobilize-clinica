@@ -2,15 +2,18 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full h-screen flex items-center justify-center text-center px-6"
+      className="relative w-full h-screen flex items-start justify-center text-center px-6"
       style={{
         backgroundImage: "url('/images/clinica-mobilize.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/45"></div>
-      <div className="relative flex flex-col items-center justify-center max-w-3xl text-white">
+
+      {/* Conteúdo */}
+      <div className="relative flex flex-col items-center justify-start max-w-3xl text-white pt-32 md:pt-40">
         <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
           Movimento, Conforto e Qualidade de Vida
         </h1>
