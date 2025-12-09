@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function FloatingWhats() {
   return (
     <a
-      href="https://wa.me/5500000000000"  // COLOQUE SEU NÚMERO
+      href="https://wa.me/5500000000000"
       target="_blank"
       rel="noopener noreferrer"
       className="
