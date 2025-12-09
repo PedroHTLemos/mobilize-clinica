@@ -10,7 +10,7 @@ export default function Hero() {
       }}
     >
       <div className="absolute inset-0 bg-black/45"></div>
-      <div className="absolute left-1/2 bottom-1/4 -translate-x-1/2 text-center max-w-3xl text-white">
+      <div className="absolute left-1/2 bottom-1/5 -translate-x-1/2 text-center max-w-3xl text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
           Movimento, Conforto e Qualidade de Vida
         </h1>
