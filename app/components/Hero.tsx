@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-6"
+      className="relative w-full h-screen flex items-center justify-center text-center px-6"
       style={{
         backgroundImage: "url('/images/clinica-mobilize.png')",
         backgroundSize: "cover",
@@ -10,8 +10,7 @@ export default function Hero() {
       }}
     >
       <div className="absolute inset-0 bg-black/45"></div>
-
-      <div className="relative max-w-3xl mx-auto text-white">
+      <div className="relative flex flex-col items-center justify-center max-w-3xl text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
           Movimento, Conforto e Qualidade de Vida
         </h1>
