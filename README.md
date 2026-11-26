@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mobilize · Landing page para clínica de fisioterapia (Next.js)
 
-## Getting Started
+Landing page institucional de uma clínica fictícia de ortopedia e fisioterapia, feita com **Next.js**, **TypeScript** e **Tailwind CSS**.
 
-First, run the development server:
+> Desenvolvi esta página como **proposta visual para um possível cliente** em dez/2025. A clínica "Mobilize", os telefones e o endereço são fictícios. Não há back-end: é uma página estática de apresentação.
+
+---
+
+## Seções
+
+- **Header** fixo com navegação por âncoras (Início, Sobre, Especialidades, Contato).
+- **Hero** com chamada principal.
+- **Sobre** a clínica.
+- **Especialidades** em cards: lombalgia, hérnia de disco, dor cervical, reabilitação pós-cirúrgica, lesões esportivas, ATM, ombro e joelho.
+- **Diferenciais** do atendimento.
+- **Localização** com mapa do Google Maps incorporado (iframe) e link para o WhatsApp.
+- **FAQ** em acordeão, com estado controlado por `useState`.
+- **Botão flutuante de WhatsApp** presente em todas as seções.
+- **Footer** com contatos e redes sociais.
+
+---
+
+## Tecnologias
+
+| Item | Uso |
+|---|---|
+| Next.js 16 (App Router) + React 19 | Estrutura da página |
+| TypeScript | Componentes tipados |
+| Tailwind CSS 4 | Estilização e layout responsivo |
+| next/font (Inter) | Fonte otimizada |
+| lucide-react e react-icons | Ícones |
+
+---
+
+## Como executar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Organização
 
-## Learn More
+```
+app/
+├── layout.tsx        # Metadados, fonte, Header e botão flutuante
+├── page.tsx          # Composição das seções
+├── globals.css
+└── components/       # Hero, About, Specialties, Differentials, Locations, FAQ, Footer...
+public/images/        # Imagens da página
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Limitações conhecidas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Telefones, endereço e links de redes sociais são placeholders.
+- Não há formulário de contato nem back-end; o contato é feito por links para o WhatsApp.
+- `Contact.tsx` não é usado na página (a seção de localização assumiu esse papel).
